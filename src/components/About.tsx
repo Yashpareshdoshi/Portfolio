@@ -37,7 +37,7 @@ export const About = () => {
           >
             <div className="aspect-square rounded-3xl overflow-hidden glass p-8">
             <motion.img
-            src="/src/assets/profile.png"
+            src="@/assets/profile.png"
             alt="Cybersecurity"
             className="w-full h-full object-contain"
             whileHover={{ scale: 1.05, rotate: 1 }}

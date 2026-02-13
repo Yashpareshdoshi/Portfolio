@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import profile from "@/assets/profile.png";
 
 export const About = () => {
   const ref = useRef(null);
@@ -36,13 +37,11 @@ export const About = () => {
             className="relative"
           >
             <div className="aspect-square rounded-3xl overflow-hidden glass p-8">
-            <motion.img
-            src="@/assets/profile.png"
-            alt="Cybersecurity"
-            className="w-full h-full object-contain"
-            whileHover={{ scale: 1.05, rotate: 1 }}
-            transition={{ type: "spring", stiffness: 200 }}
-/>
+              <img
+                src={profile}
+                alt="Yash Doshi"
+                className="w-100 h-100 md:w-70 md:h-70 rounded-full object-cover border-4 border-primary glow-primary"
+              />
 
             </div>
   
